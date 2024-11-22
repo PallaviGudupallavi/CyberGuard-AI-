@@ -45,3 +45,15 @@ Follow these steps to set up the environment and run the project locally.
 
 ```bash
 pip install -r requirements.txt
+git clone https://github.com/yourusername/CyberGuard-AI-Hackathon.git
+cd CyberGuard-AI-Hackathon
+jupyter notebook CyberGuard_AI_Hackathon.ipynb
+
+---
+
+### How to Use:
+1. **Replace** `yourusername` with your GitHub username where the images are hosted.
+2. **Upload** the `README.md` file to your GitHub repository.
+3. **Ensure** that the images are stored in the correct location in your GitHub repository (as referenced in the markdown).
+
+This `README.md` is now ready for your GitHub repository! Let me know if you need further adjustments.
