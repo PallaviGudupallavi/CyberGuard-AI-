@@ -59,7 +59,7 @@ jupyter notebook CyberGuard_AI_Hackathon.ipynb
 from transformers import BertTokenizer, BertForSequenceClassification
 from torch.optim import AdamW
 ```
-###Preprocessing
+### Preprocessing
 
 Data preprocessing is a critical step in preparing the text data for machine learning models. The following steps were implemented:
 
@@ -72,7 +72,7 @@ Tokenization: The text data was tokenized into individual words or tokens. This 
 Label Encoding: Both categories and subcategories were encoded as integers using LabelEncoder to prepare the data for classification.
 
 
-###Model Selection and Training
+### Model Selection and Training
 
 Several models were considered for the classification task:
 
@@ -83,7 +83,7 @@ BERT (Bidirectional Encoder Representations from Transformers)
 Why BERT?
 BERT is a transformer-based architecture that uses attention mechanisms to understand the context of words within sentences. Unlike traditional models that process words sequentially, BERT processes the entire sentence in parallel, enabling it to understand bidirectional context. This makes BERT particularly well-suited for natural language understanding tasks like text classification.
 
-###Model Training Process:
+### Model Training Process:
 Splitting Data: The data was split into training and validation sets using stratified sampling to maintain class distribution in both sets.
 Training: The BERT model was fine-tuned using the training data for three epochs. The optimizer used was AdamW, which is commonly used for transformer models.
 Evaluation: After training, the model was evaluated using the validation data and performance metrics such as accuracy, precision, recall, F1-score, and the confusion matrix.
@@ -93,7 +93,7 @@ Model Training Code Example:
 from transformers import BertTokenizer, BertForSequenceClassification
 from torch.optim import AdamW
 
-###Confusion Matrix
+### Confusion Matrix
 The confusion matrix provides a detailed breakdown of predictions across all classes. It helps visualize how well the model is distinguishing between different classes. The diagonal elements represent the correctly classified instances, while off-diagonal elements represent misclassifications.
 
 Example Classification Report:
@@ -106,7 +106,7 @@ plaintext
    Any Other Cyber Crime        0.76      0.72      0.74      2142
 
 
-###Results
+### Results
 The final model achieves an overall accuracy of 89% across all classes. The confusion matrix and classification report indicate that the model performs well for categories like "Online Financial Fraud," but faces challenges with underrepresented categories like "Cyber Terrorism."
 ![image](https://github.com/user-attachments/assets/49ce89d6-cb41-4752-bc28-90a44577983b)
 Key Metrics:
@@ -116,7 +116,7 @@ Macro Avg. Recall: 69%
 Macro Avg. F1-Score: 71%
 The model’s high precision in certain classes (e.g., Financial Fraud) suggests it is effective at predicting these classes, while low recall in others (e.g., Cyber Terrorism) indicates that the model might need further improvement, especially in handling rare categories.
 
-###Future Work
+### Future Work
 Future improvements could include:
 
 Class Balancing: Implementing techniques like oversampling or SMOTE to handle class imbalance.
