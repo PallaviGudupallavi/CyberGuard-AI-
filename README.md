@@ -1,8 +1,7 @@
 # CyberGuard-AI
 
 
-![image](https://github.com/user-attachments/assets/843d8c71-43f8-4209-9677-3acdb2208b65)
-
+![image](https://github.com/user-attachments/assets/49ce89d6-cb41-4752-bc28-90a44577983b)
 This project is a machine learning solution designed for the **IndiaAI CyberGuard AI Hackathon**. The challenge is to develop a machine learning model that analyzes and classifies unstructured text data related to cybercrimes to improve citizen support on the **National Cyber Crime Reporting Portal (NCRP)**. This repository contains the implementation of the solution using Natural Language Processing (NLP) and machine learning techniques, including the use of **BERT (Bidirectional Encoder Representations from Transformers)**.
 
 ## Table of Contents
@@ -108,7 +107,9 @@ plaintext
 
 ### Results
 The final model achieves an overall accuracy of 89% across all classes. The confusion matrix and classification report indicate that the model performs well for categories like "Online Financial Fraud," but faces challenges with underrepresented categories like "Cyber Terrorism."
-![image](https://github.com/user-attachments/assets/49ce89d6-cb41-4752-bc28-90a44577983b)
+
+![image](https://github.com/user-attachments/assets/843d8c71-43f8-4209-9677-3acdb2208b65)
+
 Key Metrics:
 Accuracy: 89%
 Macro Avg. Precision: 75%
